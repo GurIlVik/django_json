@@ -1,0 +1,7 @@
+{% for example_math in examples_math %}
+  <h1>Решите пример: <h1>
+  <span>{{example_math.0}} = </span>
+  {% if i_am_teacher %}
+    <span>{{example_math.1}}</span>
+  {% endif %}
+{% endfor %}
